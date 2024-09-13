@@ -1,0 +1,19 @@
+const quantidadeCafePessoa = 120; //120ml
+    const maximoCafeteira = 1000;
+
+    let quantidadePessoas = document.querySelector(".quantidade_pessoas").value;
+    quantidadePessoas = Number(quantidadePessoas);
+
+    const quantidadeAgua = quantidadePessoas * quantidadeCafePessoa;
+
+    const quantidadeColheres = quantidadeAgua / 250;
+
+    if(quantidadeAgua > 1000) {
+        const segundaCafeteira = quantidadeAgua - maximoCafeteira;
+        const quantidadeColheres = segundaCafeteira / 250;
+        const quantidadeAgua = quantidadeAgua - segundaCafeteira;
+        console.log(segundaCafeteira, quantidadeColheres);
+        console.log(quantidadeAgua, quantidadeColheres);
+    }
+
+    console.log(quantidadeAgua, quantidadeColheres);

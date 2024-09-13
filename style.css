@@ -19,6 +19,8 @@ body {
     width: 420px;
     background: brown;
     color: #ffff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
 }
 
 .wrapper h1 {
@@ -58,4 +60,8 @@ body {
 
 .input-box i {
     font-size: 24px;
+}
+
+.button {
+    margin: auto;
 }
